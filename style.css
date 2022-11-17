@@ -1,0 +1,193 @@
+:root {
+  --primary: #a5c882;
+  --secondary: #d33f49;
+  --light: #fff;
+  --dark: #000;
+  --disable: #e7e7e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+.main--container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.container--add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  height: 50%;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 26px 26px 52px #dfdfdf, -26px -26px 52px #f6f6f6;
+}
+
+.title--card {
+  text-align: center;
+}
+
+form {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title--input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.title--input::placeholder {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.description--input {
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 10px;
+  height: 150px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: inset 6px 6px 12px #e8e8e8, inset -6px -6px 12px #e8e8e8;
+}
+
+.add {
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background: #efefef;
+  color: #444;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  outline: none;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.add:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.add:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.card--body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 26px 26px 52px #dfdfdf, -16px -10px 52px #e8e8e8;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.card--body h2 {
+  border-bottom: 2px solid;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card--body p {
+  user-select: none;
+  height: 50px;
+  padding: 1em;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: inset 6px 6px 12px #e8e8e8, inset -6px -6px 12px #e8e8e8;
+}
+
+.taks {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.remove {
+  width: 40%;
+  height: 30px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--disable);
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .main--container {
+    display: block;
+  }
+  .container--add {
+    padding: 2em;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .taks {
+    margin: 5em;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .taks {
+    position: relative;
+    right: 8%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+    .taks {
+      position: relative;
+      right: 10%;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .taks {
+      position: relative;
+      right: 15%;
+    }
+}
+
+
